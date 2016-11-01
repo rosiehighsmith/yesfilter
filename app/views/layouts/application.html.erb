@@ -7,6 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  
   <% if current_user %>
     You're signed in as <%= current_user.email %>.
     <%= link_to "Sign out", destroy_user_session_path %>
@@ -14,7 +15,7 @@
     <%= link_to "Sign In", new_user_session_path %>
     <%= link_to "Sign Up", new_user_registration_path %>
   <% end %>
-  
+
   <% if notice.present? %>
     <p class="alert alert-info"><%= notice %></p>
   <% end %>
