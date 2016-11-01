@@ -1,10 +1,5 @@
 source 'https://rubygems.org'
-gem 'bootstrap-sass', '~> 3.3.5.1'
-gem 'sprockets', '2.11.0'
-gem 'sass-rails'
-gem 'simple_form'
 
-gem 'rails_12factor', group: :production
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.9'
 # Use postgresql as the database for Active Record
@@ -43,3 +38,12 @@ gem 'spring',        group: :development
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
 end
+
+gem 'bootstrap-sass', '~> 3.3.5.1'
+gem 'sprockets', '2.11.0'
+gem 'sass-rails'
+gem 'simple_form'
+gem 'devise', '>= 3.2.4'
+gem 'rails_12factor', group: :production
+
+
