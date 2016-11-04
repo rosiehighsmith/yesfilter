@@ -37,6 +37,7 @@ gem 'spring',        group: :development
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
+  gem "factory_girl_rails", "~> 4.0"
 end
 
 gem 'bootstrap-sass', '~> 3.3.5.1'
@@ -45,5 +46,3 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'devise', '>= 3.2.4'
 gem 'rails_12factor', group: :production
-
-
