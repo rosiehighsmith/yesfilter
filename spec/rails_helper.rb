@@ -8,7 +8,8 @@ require 'rspec/rails'
 
 # Added to avoid Devise::MissingWarden error in testing
 RSpec.configure do |config|
-  config.include Devise::TestHelpers, type: :controller
+  config.include Devise::Test::ControllerHelpers, type: :controller
+  include ActionDispatch::TestProcess
 end
 # Add additional requires below this line. Rails is not loaded until this point!
 
