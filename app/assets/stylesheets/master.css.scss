@@ -43,7 +43,6 @@ body {
   border: 1px solid #e8e8e8;
   margin-top: 40px;
   padding: 0;
-  text-align: center;
 }
 
 .card p, .card .message {
@@ -94,4 +93,19 @@ input {
   font-weight: bold;
   font-size: 16px;
   margin-right: 20px;
+}
+
+.comments {
+  padding: 20px;
+}
+
+.comment {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.comment_handle {
+  color: #125688;
+  font-weight: bold;
+  font-size: 18px;
 }
