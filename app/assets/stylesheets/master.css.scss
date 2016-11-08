@@ -32,6 +32,10 @@ body {
   font-family: 'Pacifico', cursive;
 }
 
+.brand a {
+  text-decoration: none;
+}
+
 .card {
   background-color: #fff;
   border-radius: .25rem;
@@ -84,4 +88,10 @@ input {
 .input.boolean label {
   margin-top: 5px;
   line-height: 44px;
+}
+
+.gram-actions a {
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 20px;
 }
