@@ -47,3 +47,5 @@ gem 'simple_form'
 gem 'devise', '>= 3.2.4'
 gem 'rails_12factor', group: :production
 gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
+gem 'figaro'
+gem 'fog'
