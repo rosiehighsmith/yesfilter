@@ -8,7 +8,7 @@ RSpec.describe CommentsController, type: :controller do
             user = FactoryGirl.create(:user)
             sign_in user
 
-            post :create, id: gram.id, comment: {message: "awesome gram"}
+            post :create, gram_id: gram.id, comment: {message: "awesome gram"}
 
             expect(response).to redirect_to root_path
             expect(gram.comments.length).to eq 1
@@ -17,17 +17,17 @@ RSpec.describe CommentsController, type: :controller do
 
         it "should require a logged in user to comment on a gram" do
             gram = FactoryGirl.create(:gram)
-            post :create, id: gram.id, comment: {message: "awesome gram"}
+            post :create, gram_id: gram.id, comment: {message: "awesome gram"}
             expect(response).to redirect_to new_user_session_path
         end
 
         it "should return http status not found if gram isn't found" do
             user = FactoryGirl.create(:user)
             sign_in user
-            post :create, id: gram.id, 'YOLOSWAG': {message: "awesome gram"}
+            post :create, gram_id: 'YOLOSWAG', comment: {message: "awesome gram"}
             expect(response).to have_http_status :not_found
         end
-        
+
     end
 
 end
