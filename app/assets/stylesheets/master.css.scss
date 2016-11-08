@@ -19,6 +19,7 @@ body {
     font-weight: bold;
     color: #125688;
     font-size: 16px;
+    padding-left: 8px;
 }
 
 .top-nav .add {
@@ -51,4 +52,26 @@ body {
   color: #125688;
   font-weight: bold;
   font-size: 18px;
+}
+
+.card.form {
+  padding: 20px;
+}
+
+label {
+  font-size: 18px;
+}
+
+input {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.post-btn {
+  background-color: #125688;
+  width: 100%;
+  border: none;
+  font-size: 24px;
+  color: white;
+  margin-top: 10px;
 }
