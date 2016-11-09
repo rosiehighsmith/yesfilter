@@ -3,7 +3,7 @@
 
 body {
   background: url('/assets/foggy_birds.png') lightgray;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Helvetica', sans-serif;
 }
 
 .top-nav {
@@ -47,7 +47,7 @@ body {
 
 .card p, .card .message {
   font-size: 18px;
-  margin: 20px;
+  margin: 10px 20px;
 }
 
 .handle {
@@ -96,7 +96,7 @@ input {
 }
 
 .comments {
-  padding: 20px;
+  padding: 10px 20px;
 }
 
 .comment {
