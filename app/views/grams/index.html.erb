@@ -2,7 +2,9 @@
     <% @grams.each do |gram| %>
     <div class = "card">
         <div class = "handle"><%= gram.user.email %></div>
-        <%= image_tag gram.picture %>
+            <div class = "pics">
+                <%= image_tag gram.picture, width: '100%' %>
+            </div>
         <p>
             <%= gram.message %>
         </p>
