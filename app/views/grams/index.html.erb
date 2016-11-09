@@ -4,11 +4,9 @@
         <div class = "handle"><%= gram.user.email %></div>
             <div class = "pics">
                 <%= image_tag gram.picture, width: '100%' %>
+                <br />
+                <br />
             </div>
-        <p>
-            <%= gram.message %>
-        </p>
-
         <div class = "gram-actions pull-right">
             <% if current_user && current_user == gram.user %>
                 <%= link_to 'Edit', edit_gram_path(gram) %>
@@ -16,6 +14,10 @@
             <% end %>
         </div>
         <br class = "clear-fix"/>
+        <p>
+            <%= gram.message %>
+        </p>
+
         <div class = "comments">
             <% gram.comments.each do |comment| %>
                 <div class = "comment">
