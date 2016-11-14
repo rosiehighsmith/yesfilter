@@ -2,7 +2,7 @@ class GramsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :destroy, :edit, :update]
 
   def index
-    @grams = Gram.all
+    @grams = Gram.order('created_at DESC')
   end
 
   def new
